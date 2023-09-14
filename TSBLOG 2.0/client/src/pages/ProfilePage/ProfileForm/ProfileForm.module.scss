@@ -1,0 +1,65 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.label{
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 100%;
+  
+  input{
+    display: none;
+  }
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.49);
+    opacity: 0;
+    transition: all .2s;
+  }
+
+  &:hover::before{
+    opacity: 1;
+  }
+
+  .close{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--red_500);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+  }
+
+  &:hover{
+    .close{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+}

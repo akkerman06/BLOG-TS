@@ -1,0 +1,65 @@
+
+.detail{
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  overflow: hidden;
+
+  .image{
+    height: 418px;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .favorite{
+
+      position: absolute;
+
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+  .info, .footer{
+    padding: 15px;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer{
+    border-top: 1px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footerUser{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footerIcons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+
+
+
+}
+
+.similar{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
